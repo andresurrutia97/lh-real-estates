@@ -15,11 +15,13 @@
       "
     >
       <div class="flex items-center justify-start h-full w-full">
-        <SideNavToggle @toggle="$emit('sidenavToggle')" />
+        <SidenavToggle @toggle="$emit('sidenavToggle')" />
         <div class="text-xl">
           <nuxt-link to="/">
             <div class="flex items-end">
-              <LhLogo class="h-6 mr-2" /><LhTitle class="hidden md:block" />
+              <LaHausLogo class="h-6 mr-2" /><LaHausTitle
+                class="hidden md:block"
+              />
             </div>
           </nuxt-link>
         </div>
@@ -42,20 +44,20 @@
 </template>
 
 <script>
-import SideNavToggle from '@/components/navigation/SideNavToggle'
+import SidenavToggle from '@/components/navigation/SidenavToggle'
 import Menu from '@/components/UI/menu'
 import Item from '@/components/UI/menu/Item'
-import LhLogo from '@/components/laHaus/logo'
-import LhTitle from '@/components/laHaus/title'
+import LaHausLogo from '@/assets/svg/LaHausLogo'
+import LaHausTitle from '@/assets/svg/LaHausTitle'
 
 import routes from '@/helpers/routes'
 
 export default {
   name: 'Header',
   components: {
-    SideNavToggle,
-    LhLogo,
-    LhTitle,
+    SidenavToggle,
+    LaHausLogo,
+    LaHausTitle,
     Menu,
     Item,
   },

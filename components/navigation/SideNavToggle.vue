@@ -8,4 +8,3 @@
     <div class="w-4 h-0.5 bg-lh-green-gray"></div>
   </div>
 </template>
-4

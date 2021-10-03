@@ -20,7 +20,8 @@
       "
     >
       <div class="m-20 flex justify-start items-end">
-        <LhLogo :h="60" :w="60" class="mr-2" /><LhTitle :h="25" :w="110" />
+        <LaHausLogo :h="60" :w="60" class="mr-2" />
+        <LaHausTitle :h="25" :w="110" />
       </div>
       <ul @click="$emit('close')">
         <li
@@ -38,14 +39,14 @@
 <script>
 import routes from '@/helpers/routes'
 
-import LhLogo from '@/components/laHaus/logo'
-import LhTitle from '@/components/laHaus/title'
+import LaHausLogo from '@/assets/svg/LaHausLogo'
+import LaHausTitle from '@/assets/svg/LaHausTitle'
 
 export default {
   name: 'Sidenav',
   components: {
-    LhLogo,
-    LhTitle,
+    LaHausLogo,
+    LaHausTitle,
   },
   props: {
     show: {
