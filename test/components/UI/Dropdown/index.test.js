@@ -1,12 +1,12 @@
 import { mount } from '@vue/test-utils'
 
-import Menu from '@/components/UI/menu'
+import Dropdown from '@/components/UI/Dropdown'
 
-describe('Menu', () => {
+describe('Dropdown', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(Menu)
+    wrapper = mount(Dropdown)
   })
 
   test('should be a Vue instance', () => {

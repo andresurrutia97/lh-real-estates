@@ -1,12 +1,12 @@
 import { mount } from '@vue/test-utils'
 
-import Item from '@/components/UI/menu/Item'
+import DropdownItem from '@/components/UI/Dropdown/DropdownItem'
 
-describe('Item', () => {
+describe('DropdownItem', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(Item, {
+    wrapper = mount(DropdownItem, {
       slots: {
         default: '<div class="child"></div>',
       },
