@@ -4,7 +4,7 @@ import { lists } from '@/test/mocks'
 import EstateLists from '@/components/EstateLists'
 import Card from '@/components/UI/Card'
 
-describe('EstateLists', () => {
+describe('EstateLists.vue', () => {
   let wrapper
 
   beforeEach(() => {

@@ -1,12 +1,12 @@
-import { mount } from '@vue/test-utils'
+import { shallowMount } from '@vue/test-utils'
 
 import PageContent from '@/components/PageContent'
 
-describe('PageContent', () => {
+describe('PageContent.vue', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(PageContent, {
+    wrapper = shallowMount(PageContent, {
       slots: {
         default: '<div class="PageContent"></div>',
       },

@@ -1,12 +1,12 @@
-import { mount } from '@vue/test-utils'
+import { shallowMount } from '@vue/test-utils'
 
 import Dropdown from '@/components/UI/Dropdown'
 
-describe('Dropdown', () => {
+describe('Dropdown.vue', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(Dropdown)
+    wrapper = shallowMount(Dropdown)
   })
 
   test('should be a Vue instance', () => {
@@ -27,6 +27,11 @@ describe('Dropdown', () => {
 
   test('should handle close menu correctly on blur', async () => {
     await wrapper.trigger('blur')
+    expect(wrapper.vm.isVisible).toBeFalsy()
+  })
+
+  test('should set isVisible to false', async () => {
+    await wrapper.vm.handleClose()
     expect(wrapper.vm.isVisible).toBeFalsy()
   })
 })
