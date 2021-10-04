@@ -7,6 +7,8 @@ export const actions = {
         commit('realEstates/setEstates', included)
         commit('realEstates/setLists', data)
       })
-      .catch((e) => error(e))
+      .catch(() => {
+        // Handle error
+      })
   },
 }

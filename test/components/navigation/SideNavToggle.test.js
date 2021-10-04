@@ -1,12 +1,12 @@
 import { shallowMount } from '@vue/test-utils'
 
-import SidenavToggle from '@/components/navigation/SidenavToggle'
+import SideNavToggle from '@/components/navigation/SideNavToggle'
 
-describe('SidenavToggle.vue', () => {
+describe('SideNavToggle.vue', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = shallowMount(SidenavToggle)
+    wrapper = shallowMount(SideNavToggle)
   })
 
   test('should be a Vue instance', () => {

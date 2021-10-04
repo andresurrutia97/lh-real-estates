@@ -1,19 +1,33 @@
 <template>
-  <div class="md:hidden">
+  <div>
     <div
       v-if="show"
-      class="fixed w-full h-full bg-black opacity-50 z-150 top-0 left-0"
+      class="fixed w-full h-full bg-black opacity-70 z-150 top-0 left-0 md:hidden"
       @click="$emit('close')"
     ></div>
     <div
-      v-if="show"
-      class="fixed flex flex-col items-center h-full w-64 bg-white z-200 top-0 left-0"
+      class="
+        transform
+        top-0
+        left-0
+        w-64
+        fixed
+        h-full
+        bg-white
+        ease-in-out
+        transition-all
+        duration-300
+        z-150
+        md:-translate-x-full
+      "
+      :class="show ? 'translate-x-0' : '-translate-x-full'"
     >
       <nuxt-link to="/">
-        <div class="m-10 flex justify-start items-end">
+        <div class="m-10 flex justify-center items-end" @click="$emit('close')">
           <LaHausLogo :h="40" :w="40" class="mr-2" />
-          <LaHausTitle /></div
-      ></nuxt-link>
+          <LaHausTitle />
+        </div>
+      </nuxt-link>
       <ul @click="$emit('close')">
         <li v-for="(route, idx) in routes" :key="idx" class="mb-4 text-center">
           <nuxt-link :to="route.path">{{ route.name }}</nuxt-link>

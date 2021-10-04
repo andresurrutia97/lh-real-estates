@@ -6,9 +6,9 @@
         :key="idx"
         :class="getImagesStyle[getImagesToDisplay.length][idx]"
       >
-        <img v-if="idx < 2" class="object-cover h-card w-full" :src="url" />
+        <CardImage v-if="idx < 2" :url="url" />
         <div v-else class="relative h-card">
-          <img class="absolute object-cover h-card w-full" :src="url" />
+          <CardImage class="absolute" :url="url" />
           <div
             class="
               absolute
@@ -26,13 +26,16 @@
         </div>
       </div>
     </div>
-    <img v-else class="object-cover h-card w-full rounded-lg" src="~/assets/img/default.png" />
+    <CardImage v-else />
   </div>
 </template>
 
 <script>
+import CardImage from '@/components/UI/Card/CardImage'
+
 export default {
   name: 'CardImages',
+  components: { CardImage },
   props: {
     images: { type: Array, default: () => [] },
     total: { type: Number, default: 0 },
