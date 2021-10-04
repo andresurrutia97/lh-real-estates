@@ -9,10 +9,11 @@
       v-if="show"
       class="fixed flex flex-col items-center h-full w-64 bg-white z-200 top-0 left-0"
     >
-      <div class="m-10 flex justify-start items-end">
-        <LaHausLogo :h="40" :w="40" class="mr-2" />
-        <LaHausTitle />
-      </div>
+      <nuxt-link to="/">
+        <div class="m-10 flex justify-start items-end">
+          <LaHausLogo :h="40" :w="40" class="mr-2" />
+          <LaHausTitle /></div
+      ></nuxt-link>
       <ul @click="$emit('close')">
         <li v-for="(route, idx) in routes" :key="idx" class="mb-4 text-center">
           <nuxt-link :to="route.path">{{ route.name }}</nuxt-link>

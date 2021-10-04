@@ -1,12 +1,12 @@
-import { mount } from '@vue/test-utils'
+import { shallowMount } from '@vue/test-utils'
 
 import DropdownItem from '@/components/UI/Dropdown/DropdownItem'
 
-describe('DropdownItem', () => {
+describe('DropdownItem.vue', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(DropdownItem, {
+    wrapper = shallowMount(DropdownItem, {
       slots: {
         default: '<div class="child"></div>',
       },

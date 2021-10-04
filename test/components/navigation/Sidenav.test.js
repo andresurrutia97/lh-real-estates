@@ -1,12 +1,12 @@
-import { mount } from '@vue/test-utils'
+import { shallowMount } from '@vue/test-utils'
 
 import Sidenav from '@/components/navigation/Sidenav'
 
-describe('Sidenav', () => {
+describe('Sidenav.vue', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(Sidenav, {
+    wrapper = shallowMount(Sidenav, {
       stubs: {
         NuxtLink: true,
       },

@@ -1,12 +1,12 @@
-import { mount } from '@vue/test-utils'
+import { shallowMount } from '@vue/test-utils'
 
 import Header from '@/components/navigation/Header'
 
-describe('Header', () => {
+describe('Header.vue', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(Header, {
+    wrapper = shallowMount(Header, {
       stubs: {
         NuxtLink: true,
       },

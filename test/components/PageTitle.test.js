@@ -1,12 +1,12 @@
-import { mount } from '@vue/test-utils'
+import { shallowMount } from '@vue/test-utils'
 
 import PageTitle from '@/components/PageTitle'
 
-describe('PageTitle', () => {
+describe('PageTitle.vue', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(PageTitle, {
+    wrapper = shallowMount(PageTitle, {
       slots: {
         default: 'PageTitle',
       },
