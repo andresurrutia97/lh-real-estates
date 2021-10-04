@@ -1,5 +1,5 @@
 {
-  "name": "lh-real-state",
+  "name": "lh-real-estates",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -12,6 +12,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "axios": "^0.22.0",
     "core-js": "^3.15.1",
     "nuxt": "^2.15.7"
   },
