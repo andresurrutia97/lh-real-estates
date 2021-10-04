@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'lh-real-state',
+    title: 'lh-real-estates',
     htmlAttrs: {
       lang: 'en',
     },
@@ -38,5 +38,9 @@ export default {
 
   router: {
     linkActiveClass: 'text-lh-caribean-green',
+  },
+
+  env: {
+    baseUrl: 'https://lh-real-estates-challenge-api.herokuapp.com/real-estates',
   },
 }
