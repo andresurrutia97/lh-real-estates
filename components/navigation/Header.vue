@@ -8,10 +8,10 @@
         flex
         items-center
         bg-white
-        z-10
+        z-100
         px-4
         border-b border-lh-bg-gray
-        md:px-20
+        md:px-32
       "
     >
       <div class="flex items-center justify-start h-full w-full">
@@ -19,9 +19,8 @@
         <div class="text-xl">
           <nuxt-link to="/">
             <div class="flex items-end">
-              <LaHausLogo class="h-6 mr-2" /><LaHausTitle
-                class="hidden md:block"
-              />
+              <LaHausLogo class="h-6 mr-2" />
+              <LaHausTitle class="hidden md:block" />
             </div>
           </nuxt-link>
         </div>
@@ -33,9 +32,10 @@
             <nuxt-link :to="route.path">{{ route.name }}</nuxt-link>
           </li>
           <li>
-            <Menu title="Perfil">
-              <Item>Cuenta</Item> <Item>Configuracion</Item>
-            </Menu>
+            <Dropdown title="Perfil">
+              <DropdownItem>Cuenta</DropdownItem>
+              <DropdownItem>Configuración</DropdownItem>
+            </Dropdown>
           </li>
         </ul>
       </div>
@@ -44,13 +44,13 @@
 </template>
 
 <script>
+import routes from '@/helpers/routes'
+
 import SidenavToggle from '@/components/navigation/SidenavToggle'
-import Menu from '@/components/UI/menu'
-import Item from '@/components/UI/menu/Item'
+import Dropdown from '@/components/UI/Dropdown'
+import DropdownItem from '@/components/UI/Dropdown/DropdownItem'
 import LaHausLogo from '@/assets/svg/LaHausLogo'
 import LaHausTitle from '@/assets/svg/LaHausTitle'
-
-import routes from '@/helpers/routes'
 
 export default {
   name: 'Header',
@@ -58,8 +58,8 @@ export default {
     SidenavToggle,
     LaHausLogo,
     LaHausTitle,
-    Menu,
-    Item,
+    Dropdown,
+    DropdownItem,
   },
   data() {
     return { routes }

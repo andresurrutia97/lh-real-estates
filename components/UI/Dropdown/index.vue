@@ -45,6 +45,7 @@
 
 <script>
 export default {
+  name: 'DropdownMenu',
   props: { title: { type: String, default: '' } },
   data() {
     return {
