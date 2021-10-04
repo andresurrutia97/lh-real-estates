@@ -15,6 +15,7 @@
 import NotificationEllipse from '@/components/NotificationEllipse'
 
 export default {
+  name: 'SideNavToggle',
   components: { NotificationEllipse },
 }
 </script>

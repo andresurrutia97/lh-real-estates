@@ -15,7 +15,7 @@
       "
     >
       <div class="flex items-center justify-start h-full w-full">
-        <SidenavToggle @toggle="$emit('sidenavToggle')" />
+        <SideNavToggle @toggle="$emit('sidenavToggle')" />
         <nuxt-link to="/">
           <div class="flex items-end md:mb-2">
             <LaHausLogo class="h-6 mr-2" />
@@ -46,7 +46,7 @@
 <script>
 import routes from '@/helpers/routes'
 
-import SidenavToggle from '@/components/navigation/SidenavToggle'
+import SideNavToggle from '@/components/navigation/SideNavToggle'
 import Dropdown from '@/components/UI/Dropdown'
 import DropdownItem from '@/components/UI/Dropdown/DropdownItem'
 import NotificationEllipse from '@/components/NotificationEllipse'
@@ -57,7 +57,7 @@ import LaHausTitle from '@/assets/svg/LaHausTitle'
 export default {
   name: 'Header',
   components: {
-    SidenavToggle,
+    SideNavToggle,
     LaHausLogo,
     LaHausTitle,
     Dropdown,
