@@ -4,7 +4,7 @@
       :images="getListImgUrls(list.attributes.real_estate_ids)"
       :total="getTotalEstates"
     />
-    <div class="text-lg font-semibold">{{ list.attributes.name }}</div>
+    <div class="text-lg font-semibold mb-2">{{ list.attributes.name }}</div>
     <div class="text-sm text-lh-green-gray">
       <span>{{ getTotalEstates }}</span>
       propiedades guardadas

@@ -8,6 +8,8 @@ module.exports = {
       'lh-caribean-green': '#3ecfaf',
       'lh-green-gray': '#5B6866',
       'lh-bg-gray': '#e5f0ee',
+      'lh-md-blue': '#ebedff',
+      'lh-sky-blue': '#3948ff',
       white: '#fff',
       black: '#000',
     },
