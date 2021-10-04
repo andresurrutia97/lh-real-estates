@@ -1,4 +1,4 @@
-# lh-real-state
+# La Haus - Real Estate
 
 ## Build Setup
 
