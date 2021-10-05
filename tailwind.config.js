@@ -16,7 +16,7 @@ module.exports = {
     extend: {
       // Card height
       height: {
-        card: '12rem',
+        card: '13rem',
       },
       // Custom padding for total estates on last card image in
       // card component when there is more than 3 estates
@@ -31,7 +31,7 @@ module.exports = {
       },
       // Bigger screens
       screens: {
-        '3xl': '1850px',
+        '3xl': '2000px',
       },
     },
   },
