@@ -17,8 +17,8 @@ describe('Sidenav.vue', () => {
     expect(wrapper.vm).toBeTruthy()
   })
 
-  test('should render 3 li items', async () => {
+  test('should render 4 li items', async () => {
     await wrapper.setProps({ show: true })
-    expect(wrapper.findAll('li')).toHaveLength(3)
+    expect(wrapper.findAll('li')).toHaveLength(4)
   })
 })

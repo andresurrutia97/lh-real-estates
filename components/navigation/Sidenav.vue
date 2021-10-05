@@ -28,10 +28,16 @@
           <LaHausTitle />
         </div>
       </nuxt-link>
-      <ul @click="$emit('close')">
-        <li v-for="(route, idx) in routes" :key="idx" class="mb-4 text-center">
+      <ul>
+        <li
+          v-for="(route, idx) in routes"
+          :key="idx"
+          class="mb-4 text-center"
+          @click="$emit('close')"
+        >
           <nuxt-link :to="route.path">{{ route.name }}</nuxt-link>
         </li>
+        <li class="mb-4 text-center cursor-pointer" @click="$emit('close')">Perfil</li>
       </ul>
     </div>
   </div>
